@@ -4,7 +4,7 @@ function Header() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="flex justify-between items-center my-5 py-10  border-y-2 ">
+    <div className="flex justify-between items-center mb-5 py-10  border-y-2 ">
       <h3 className="text-4xl font-bold">Ryan</h3>
       <ul className="flex text-lg font-mono font-semibold">
         <li className="mx-2">
@@ -12,6 +12,9 @@ function Header() {
         </li>
         <li className="mx-2">
           <a href="/">Dev</a>
+        </li>
+        <li className="mx-2">
+          <a href="/">Random</a>
         </li>
         <li className="mx-2">
           <a href="/">About</a>
