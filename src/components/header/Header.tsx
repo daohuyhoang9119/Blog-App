@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Button, Radio, Space, Divider } from "antd";
+import { Button } from "antd";
+
 function Header() {
   const [count, setCount] = useState(0);
 
@@ -7,24 +8,25 @@ function Header() {
     <div className="flex justify-between items-center mb-5 py-10  border-b-2 bg-gray-50 ">
       <h3 className="text-4xl font-bold">Ryan</h3>
       <ul className="flex text-lg font-mono font-semibold">
-        <li className="mx-2">
-          <a href="/">Blog</a>
+        <li className="mx-2 hover:border-b-2 border-stone-700">
+          <a href="/">📙 Blog</a>
         </li>
-        <li className="mx-2">
-          <a href="/">Dev</a>
+        <li className="mx-2 hover:border-b-2 border-stone-700">
+          <a href="/">💻 Dev</a>
         </li>
-        <li className="mx-2">
-          <a href="/">Random</a>
+        <li className="mx-2 hover:border-b-2 border-stone-700">
+          <a href="/">☕ Random</a>
         </li>
-        <li className="mx-2">
-          <a href="/">About</a>
+        <li className="mx-2 hover:border-b-2 border-stone-700">
+          <a href="/">❔ About</a>
         </li>
       </ul>
-      <div className="">
+      {/* <div className="">
         <Button type="text" shape="round" size="large">
           <p className="font-semibold">Hire Me!</p>
         </Button>
-      </div>
+      </div> */}
+      <button></button>
     </div>
   );
 }
