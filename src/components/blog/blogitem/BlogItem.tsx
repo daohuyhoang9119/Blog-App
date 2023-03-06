@@ -7,7 +7,11 @@ function BlogItem({ blogImg }: IBlogItem) {
   return (
     <div className="font-mono p-10 hover:shadow-xl cursor-pointer">
       <a href="/">
-        <img src={blogImg} alt="" className="w-full rounded-lg" />
+        <img
+          src={blogImg}
+          alt=""
+          className="w-[45rem] h-[25rem] object-fill rounded-lg"
+        />
       </a>
       <div className="font-mono">
         <p className="font-bold text-base mt-4">28 February 2023</p>

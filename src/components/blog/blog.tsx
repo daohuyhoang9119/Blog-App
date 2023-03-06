@@ -63,10 +63,34 @@ function Blog() {
       imgSource:
         "https://images.pexels.com/photos/6444/pencil-typography-black-design.jpg?auto=compress&cs=tinysrgb&w=1600",
     },
+    {
+      id: 10,
+      title: "Dog",
+      imgSource:
+        "https://images.pexels.com/photos/3183165/pexels-photo-3183165.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    },
+    {
+      id: 11,
+      title: "Dog",
+      imgSource:
+        "https://images.pexels.com/photos/6444/pencil-typography-black-design.jpg?auto=compress&cs=tinysrgb&w=1600",
+    },
+    {
+      id: 12,
+      title: "Dog",
+      imgSource:
+        "https://images.pexels.com/photos/6444/pencil-typography-black-design.jpg?auto=compress&cs=tinysrgb&w=1600",
+    },
+    {
+      id: 13,
+      title: "Dog",
+      imgSource:
+        "https://images.pexels.com/photos/6444/pencil-typography-black-design.jpg?auto=compress&cs=tinysrgb&w=1600",
+    },
   ];
   return (
     <>
-      <div className="grid grid-cols-3 gap-5 mx-28 mb-28 pb-20 bg-slate-50 rounded-2xl">
+      <div className="grid xl:grid-cols-3 md:gap-5  sm:grid-cols-2  mx-28 mb-28 pb-20 bg-slate-50 rounded-2xl">
         {blogList.map((item) => (
           <BlogItem key={item.id} blogImg={item.imgSource} />
         ))}
