@@ -3,48 +3,64 @@ import { Button } from "antd";
 
 function Header() {
   const [count, setCount] = useState(0);
+  const titles: string[] = [
+    "📝 Blog",
+    "💻 Dev",
+    "☕ Random",
+    "📚 Book",
+    "💡 Projects",
+    "❔ Me",
+  ];
 
   return (
     <nav className="sticky backdrop-blur-xl top-0 z-10 border-b-2 bg-gray-50 ">
       <div className=" mx-auto justify-between flex flex-row items-center md:px-4  p-4  max-w-7xl ">
         <h3 className="text-4xl font-bold">Ryan</h3>
         <div className="flex text-base font-sans text-gray-500 font-medium ">
-          <a
-            className="mx-4 hover:border-b hover:font-semibold border-stone-700"
+          {/* <a
+            className="mx-4 p-2 hover:border-b hover:font-bold border-stone-700"
             href="/"
           >
             📝 Blog
-          </a>
-          <a
-            className="mx-4 hover:border-b hover:font-semibold border-stone-700"
+          </a> */}
+          {titles.map((title) => (
+            <a
+              className="mx-4 p-2 hover:border-b hover:font-bold border-stone-700"
+              href="/"
+            >
+              {title}
+            </a>
+          ))}
+          {/* <a
+            className="mx-4 p-2 hover:border-b hover:font-bold border-stone-700"
             href="/"
           >
             💻 Dev
           </a>
           <a
-            className="mx-4 hover:border-b hover:font-semibold border-stone-700"
+            className="mx-4 p-2 hover:border-b hover:font-bold border-stone-700"
             href="/"
           >
             ☕ Random
           </a>
           <a
-            className="mx-4 hover:border-b hover:font-semibold border-stone-700"
+            className="mx-4 p-2 hover:border-b hover:font-bold border-stone-700"
             href="/"
           >
             📚 Book
           </a>
           <a
-            className="mx-4 hover:border-b hover:font-semibold border-stone-700"
+            className="mx-4 p-2 hover:border-b hover:font-bold border-stone-700"
             href="/"
           >
             💡 Projects
           </a>
           <a
-            className="mx-4 hover:border-b hover:font-semibold border-stone-700"
+            className="mx-4 p-2 hover:border-b hover:font-bold border-stone-700"
             href="/"
           >
             ❔ Me
-          </a>
+          </a> */}
         </div>
         {/* DARK MODE */}
         <div className="flex flex-row item-center">
@@ -80,7 +96,7 @@ function Header() {
           <a href="/" className="ml-4">
             <img
               className="w-10 h-10 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
-              src="https://images.pexels.com/photos/1519088/pexels-photo-1519088.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              src="https://images.pexels.com/photos/3913025/pexels-photo-3913025.jpeg?auto=compress&cs=tinysrgb&w=1600"
               alt="Bordered avatar"
             />
           </a>
