@@ -1,15 +1,45 @@
 import { useState } from "react";
-import { Button } from "antd";
+import { Link } from "react-router-dom";
+
+interface Ititle {
+  id: number;
+  name: string;
+  param: string;
+}
 
 function Header() {
   const [count, setCount] = useState(0);
-  const titles: string[] = [
-    "📝 Blog",
-    "💻 Dev",
-    "☕ Random",
-    "📚 Book",
-    "💡 Projects",
-    "❔ Me",
+  const titles: Ititle[] = [
+    {
+      id: 0,
+      name: "📝 Blog",
+      param: "/",
+    },
+    {
+      id: 1,
+      name: "💻 Dev",
+      param: "/dev",
+    },
+    {
+      id: 2,
+      name: "☕ Random",
+      param: "/random",
+    },
+    {
+      id: 3,
+      name: "📚 Book",
+      param: "/books",
+    },
+    {
+      id: 4,
+      name: "💡 Projects",
+      param: "/projects",
+    },
+    {
+      id: 5,
+      name: "❔ Me",
+      param: "/about",
+    },
   ];
 
   return (
@@ -17,50 +47,13 @@ function Header() {
       <div className=" mx-auto justify-between flex flex-row items-center md:px-4  p-4  max-w-7xl ">
         <h3 className="text-4xl font-bold">Ryan</h3>
         <div className="flex text-base font-sans text-gray-500 font-medium ">
-          {/* <a
-            className="mx-4 p-2 hover:border-b hover:font-bold border-stone-700"
-            href="/"
-          >
-            📝 Blog
-          </a> */}
-          {titles.map((title) => (
-            <a
-              className="mx-4 p-2 hover:border-b hover:font-bold border-stone-700"
-              href="/"
-            >
-              {title}
-            </a>
+          {titles.map((title: Ititle) => (
+            <p className="mx-4 p-2 hover:border-b hover:font-bold border-stone-700">
+              <Link to={title.param} key={title.id}>
+                {title.name}
+              </Link>
+            </p>
           ))}
-          {/* <a
-            className="mx-4 p-2 hover:border-b hover:font-bold border-stone-700"
-            href="/"
-          >
-            💻 Dev
-          </a>
-          <a
-            className="mx-4 p-2 hover:border-b hover:font-bold border-stone-700"
-            href="/"
-          >
-            ☕ Random
-          </a>
-          <a
-            className="mx-4 p-2 hover:border-b hover:font-bold border-stone-700"
-            href="/"
-          >
-            📚 Book
-          </a>
-          <a
-            className="mx-4 p-2 hover:border-b hover:font-bold border-stone-700"
-            href="/"
-          >
-            💡 Projects
-          </a>
-          <a
-            className="mx-4 p-2 hover:border-b hover:font-bold border-stone-700"
-            href="/"
-          >
-            ❔ Me
-          </a> */}
         </div>
         {/* DARK MODE */}
         <div className="flex flex-row item-center">

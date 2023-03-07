@@ -5,7 +5,7 @@ interface IBlogItem {
 
 function BlogItem({ blogImg }: IBlogItem) {
   return (
-    <>
+    <div>
       <a href="">
         <div className=" p-6 bg-white border border-gray-200 hover:border-green-600 rounded-xs shadow dark:bg-gray-800 dark:border-gray-700 font-sans">
           <p className="tracking-wide  text-sm text-gray-400 mb-1">
@@ -22,7 +22,7 @@ function BlogItem({ blogImg }: IBlogItem) {
           </p>
         </div>
       </a>
-    </>
+    </div>
   );
 }
 

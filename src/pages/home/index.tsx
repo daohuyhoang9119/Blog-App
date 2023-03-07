@@ -8,12 +8,12 @@ import Header from "../../layouts/header";
 function Home() {
   return (
     <div className="">
-      <Header />
+      {/* <Header /> */}
       <div className="bg-white mx-44">
         <Info />
         <Blog />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
