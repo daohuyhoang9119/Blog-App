@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, useParams } from "react-router-dom";
 interface IBlogItem {
   blogImg: string;
 }
@@ -6,7 +7,7 @@ interface IBlogItem {
 function BlogItem({ blogImg }: IBlogItem) {
   return (
     <div className="selection:bg-green-200">
-      <a href="">
+      <Link to={`/blog/${2}`}>
         <div className=" p-6 bg-white border border-gray-200 hover:border-green-600 rounded-xs shadow dark:bg-gray-800 dark:border-gray-700 font-sans">
           <p className="tracking-wide  text-sm text-gray-400 mb-1">
             Match 7,2023
@@ -21,7 +22,7 @@ function BlogItem({ blogImg }: IBlogItem) {
             far, in reverse chronological order.
           </p>
         </div>
-      </a>
+      </Link>
     </div>
   );
 }
