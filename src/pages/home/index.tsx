@@ -7,13 +7,9 @@ import Header from "../../layouts/header";
 
 function Home() {
   return (
-    <div className="">
-      {/* <Header /> */}
-      <div className="bg-white mx-44">
-        <Info />
-        <Blog />
-      </div>
-      {/* <Footer /> */}
+    <div className="bg-white mx-44">
+      <Info />
+      <Blog />
     </div>
   );
 }

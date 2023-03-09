@@ -89,7 +89,7 @@ function Blog() {
     },
   ];
   return (
-    <div className="grid xl:grid-cols-2 xl:gap-4 md:gap-5  sm:grid-cols-2  mx-28 mb-28 pb-20  rounded-2xl">
+    <div className=" grid xl:grid-cols-2 xl:gap-4 md:gap-5  sm:grid-cols-2  mx-28 mb-28 pb-20  rounded-2xl">
       {blogList.map((item) => (
         <BlogItem key={item.id} blogImg={item.imgSource} />
       ))}

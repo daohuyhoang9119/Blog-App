@@ -5,8 +5,8 @@ function Info() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="font-sans mx-28 my-7">
-      <p className="font-extrabold text-4xl text-gray-900">
+    <div className="font-sans mx-28 my-7 selection:bg-green-200">
+      <p className="font-extrabold text-4xl text-gray-900 ">
         Hey, I'm Huy Hoang,
       </p>
       <p className="text-sm mt-6">
